@@ -8,8 +8,8 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 3.0.2, scan-to-pair QR / secure Bluetooth | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.2-companion-3.0.4/BlacHammerAIOLoader_v3.0.2.exe) |
-| Android 6.0+ | 3.0.5, version code 10 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.2-companion-3.0.5/BlacHammerAIOLoaderCompanion_v3.0.5.apk) |
+| Windows | 3.0.3, private VPN / QR / secure Bluetooth | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.3-companion-3.0.6/BlacHammerAIOLoader_v3.0.3.exe) |
+| Android 6.0+ | 3.0.6, version code 11 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.3-companion-3.0.6/BlacHammerAIOLoaderCompanion_v3.0.6.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
 
@@ -46,9 +46,25 @@ application source code**. Development repositories are private.
 - Windows-only execution, development, memory and administration tools remain on PC.
   This companion is not a native Android implementation of every Windows tool.
 
-For pairing, use the PC's Remote tab on reachable trusted Wi-Fi/LAN or secure Bluetooth. Never expose the
+For pairing, use the PC's Remote tab on reachable trusted Wi-Fi/LAN, private VPN or secure Bluetooth. Never expose the
 PC Remote API to the public internet. Cloud support works without PC pairing.
 Phone imports do not silently overwrite or merge into PC game libraries.
+
+### Private VPN for your own devices
+
+Install official [Tailscale](https://tailscale.com/download) on PC and Android and
+authorize both in your private tailnet. In PC Remote, refresh LAN / VPN addresses,
+select the PC's `100.64.0.0/10` address and scan/paste a fresh setup QR. Choose LAN /
+VPN and approve on the PC. Same certificate pinning and revocation; no public ports.
+Wi-Fi discovery does not cross the tunnel. Android permits one active VPN; another
+VPN can disconnect Tailscale.
+
+PC VPN help supplies a TCP rule scoped to its EXE, port, Tailscale interface and
+shared source range (any Windows profile, not unrestricted public-interface access).
+Separately restrict tailnet policy to your phone -> PC Remote port; default/other
+allow rules may permit more. Keep exit nodes, subnet routing, Serve and Funnel off.
+Never invite customers into the owner's personal tailnet. No customer cloud relay
+or bundled/mandatory Tailscale account is included in these downloads.
 
 ### Pair without typing / Bluetooth fallback
 
