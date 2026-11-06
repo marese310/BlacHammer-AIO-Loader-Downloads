@@ -8,8 +8,8 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 3.0.1, secure pairing/live notices/signed updates | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.1-companion-3.0.3/BlacHammerAIOLoader_v3.0.1.exe) |
-| Android 6.0+ | 3.0.3, version code 8 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.1-companion-3.0.3/BlacHammerAIOLoaderCompanion_v3.0.3.apk) |
+| Windows | 3.0.2, scan-to-pair QR / secure Bluetooth | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.2-companion-3.0.4/BlacHammerAIOLoader_v3.0.2.exe) |
+| Android 6.0+ | 3.0.4, version code 9 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.2-companion-3.0.4/BlacHammerAIOLoaderCompanion_v3.0.4.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
 
@@ -46,14 +46,33 @@ application source code**. Development repositories are private.
 - Windows-only execution, development, memory and administration tools remain on PC.
   This companion is not a native Android implementation of every Windows tool.
 
-For pairing, use the PC's Remote tab on the same trusted Wi-Fi/LAN. Never expose the
+For pairing, use the PC's Remote tab on reachable trusted Wi-Fi/LAN or secure Bluetooth. Never expose the
 PC Remote API to the public internet. Cloud support works without PC pairing.
 Phone imports do not silently overwrite or merge into PC game libraries.
 
-Update both platforms together. Enable PC Remote, copy its HTTPS address and certificate
-fingerprint into phone Pairing, compare the fingerprint on the PC, then request approval.
-Re-pair older HTTP connections. Allow the EXE only on Windows Firewall Private/LocalSubnet
-(selected TCP port, discovery UDP 8766). If 8765 is occupied, choose an unused port.
+### Pair without typing / Bluetooth fallback
+
+1. Update both platforms together. Keep the PC loader open and **Enable Remote**;
+   select its actual LAN adapter and open **Scan-to-pair QR**.
+2. Phone **Pair PC > Scan PC QR** (or paste the PC's copied setup link), trust only
+   your own PC's card, choose Wi-Fi, then approve on the PC. No address/fingerprint/
+   code typing. The card contains the PC identity, not a license or login token.
+3. A timeout is a network/listener failure before certificate/code validation.
+   `192.168.0.x/24` and `192.168.1.x/24` are different subnets unless routed. Use the
+   same home router, avoid guest isolation, and check VPN LAN restrictions. PC
+   Connection help provides exact EXE/port-scoped Private/LocalSubnet firewall
+   commands (TCP selected port, UDP 8766); no automatic public/router openings.
+4. Without Wi-Fi: pair PC and phone in Windows/Android **Bluetooth Settings**, enable
+   **secure Bluetooth fallback** in PC Remote, reopen its QR, scan and choose
+   Bluetooth. Android 12+ asks for Nearby devices permission. A working PC radio/
+   driver is required; Bluetooth is opt-in each PC launch.
+5. Bluetooth actually carries the same remote dashboard/scripts/logs/assets/chat/
+   developer APIs over bonded/encrypted RFCOMM plus certificate-pinned TLS, with PC
+   approval and revocation. Cloud/Discord/Steam/translation/updates still require
+   Internet. Keep setup cards private and scan again after address/identity changes.
+
+Manual address/fingerprint/code entry remains available. Re-pair older HTTP
+connections. If port 8765 is occupied, choose an unused port; never kill another app.
 
 Open Support, enter a message, consent and submit New ticket; merely opening Support
 does not send anything. Notices/reply alerts poll while the apps are open, not as guaranteed
@@ -77,8 +96,10 @@ public issues. Use the app's private support screen for customer-specific proble
 ## Verification and release status
 
 Builds, unit tests, release lint, APK certificate and published download hashes have
-been checked. Physical Android install/upgrade/UI testing remains unverified because
-no phone or emulator was connected. Translation requires a separately configured provider.
+been checked. PC-generated QR decoding, real TLS stream pin/approval/revocation tests
+and native Windows Bluetooth service registration passed. Physical phone Wi-Fi/
+Bluetooth pairing, install/upgrade/UI testing remains unverified because no phone
+or emulator was connected. Translation requires a separately configured provider.
 Hosting availability, license entitlement and payment readiness are separate checks.
 
 The Android signer SHA-256 is:
