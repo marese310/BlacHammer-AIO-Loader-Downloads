@@ -9,7 +9,7 @@ application source code**. Development repositories are private.
 | Platform | Current version | Direct download |
 |---|---|---|
 | Windows | 3.0.2, scan-to-pair QR / secure Bluetooth | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.2-companion-3.0.4/BlacHammerAIOLoader_v3.0.2.exe) |
-| Android 6.0+ | 3.0.4, version code 9 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.2-companion-3.0.4/BlacHammerAIOLoaderCompanion_v3.0.4.apk) |
+| Android 6.0+ | 3.0.5, version code 10 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.2-companion-3.0.5/BlacHammerAIOLoaderCompanion_v3.0.5.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
 
@@ -74,6 +74,10 @@ Phone imports do not silently overwrite or merge into PC game libraries.
 Manual address/fingerprint/code entry remains available. Re-pair older HTTP
 connections. If port 8765 is occupied, choose an unused port; never kill another app.
 
+Companion 3.0.5 shows the actual Wi-Fi failure in the fallback dialog; Bluetooth
+errors distinguish bonding/permission, connection/deadline, certificate verification
+and authenticated API rejection. The Bluetooth offer is not itself a Bluetooth error.
+
 Open Support, enter a message, consent and submit New ticket; merely opening Support
 does not send anything. Notices/reply alerts poll while the apps are open, not as guaranteed
 background OS push. Android/Windows private inboxes remain separate.
@@ -97,9 +101,13 @@ public issues. Use the app's private support screen for customer-specific proble
 
 Builds, unit tests, release lint, APK certificate and published download hashes have
 been checked. PC-generated QR decoding, real TLS stream pin/approval/revocation tests
-and native Windows Bluetooth service registration passed. Physical phone Wi-Fi/
-Bluetooth pairing, install/upgrade/UI testing remains unverified because no phone
-or emulator was connected. Translation requires a separately configured provider.
+and native Windows Bluetooth service registration passed. The signed APK was installed/
+upgraded on Android 15 in an emulator, paired via pinned HTTPS to the running PC EXE,
+approved on PC and reached its authenticated dashboard. Two on-device tests exercised
+Android HTTPS remote routes and the Bluetooth TLS engine over an encrypted stream.
+Physical phone Wi-Fi routing/Bluetooth radio pairing remains unverified: an emulator
+does not reproduce the customer's subnet/router or physical Bluetooth bond.
+Translation requires a separately configured provider.
 Hosting availability, license entitlement and payment readiness are separate checks.
 
 The Android signer SHA-256 is:
