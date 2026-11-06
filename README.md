@@ -8,8 +8,8 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 3.0.3, private VPN / QR / secure Bluetooth | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.3-companion-3.0.6/BlacHammerAIOLoader_v3.0.3.exe) |
-| Android 6.0+ | 3.0.6, version code 11 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.3-companion-3.0.6/BlacHammerAIOLoaderCompanion_v3.0.6.apk) |
+| Windows | 3.0.4, Internet relay / private VPN / QR / secure Bluetooth | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.4-companion-3.0.7/BlacHammerAIOLoader_v3.0.4.exe) |
+| Android 6.0+ | 3.0.7, version code 12 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.4-companion-3.0.7/BlacHammerAIOLoaderCompanion_v3.0.7.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
 
@@ -46,9 +46,26 @@ application source code**. Development repositories are private.
 - Windows-only execution, development, memory and administration tools remain on PC.
   This companion is not a native Android implementation of every Windows tool.
 
-For pairing, use the PC's Remote tab on reachable trusted Wi-Fi/LAN, private VPN or secure Bluetooth. Never expose the
+For pairing, use the PC's Remote tab with Internet relay, reachable trusted Wi-Fi/LAN,
+private VPN or secure Bluetooth. Never expose the
 PC Remote API to the public internet. Cloud support works without PC pairing.
 Phone imports do not silently overwrite or merge into PC game libraries.
+
+### Internet relay: your phone to your own PC
+
+1. Update both platforms. On your paid PC, enable Remote and **Internet relay**.
+   Wait for "Internet relay ready" in Remote activity and open a fresh setup QR.
+2. On the phone, scan/paste that card, trust only your own PC and choose
+   **Internet relay**. Approve the correct named phone on your PC.
+3. Keep the PC/loader awake and both devices online. No developer VPN invitation,
+   router forwarding or public PC listening port is needed.
+
+The hosted service forwards encrypted TLS bytes; the phone still verifies your
+PC certificate, and PC approvals, tokens and revocation still apply. Keep the QR
+private: it contains a separate relay-admission capability, not a license/PC token.
+Service is bounded (initially 128 PC rooms, four concurrent streams per PC);
+availability depends on hosting resources. Errors are explicit, not an unlimited
+connectivity guarantee. Wi-Fi/private VPN/Bluetooth remain separate fallback choices.
 
 ### Private VPN for your own devices
 
@@ -63,8 +80,8 @@ PC VPN help supplies a TCP rule scoped to its EXE, port, Tailscale interface and
 shared source range (any Windows profile, not unrestricted public-interface access).
 Separately restrict tailnet policy to your phone -> PC Remote port; default/other
 allow rules may permit more. Keep exit nodes, subnet routing, Serve and Funnel off.
-Never invite customers into the owner's personal tailnet. No customer cloud relay
-or bundled/mandatory Tailscale account is included in these downloads.
+Never invite customers into the owner's personal tailnet. Internet relay is separate;
+no bundled/mandatory Tailscale account is required.
 
 ### Pair without typing / Bluetooth fallback
 
@@ -121,8 +138,12 @@ and native Windows Bluetooth service registration passed. The signed APK was ins
 upgraded on Android 15 in an emulator, paired via pinned HTTPS to the running PC EXE,
 approved on PC and reached its authenticated dashboard. Two on-device tests exercised
 Android HTTPS remote routes and the Bluetooth TLS engine over an encrypted stream.
-Physical phone Wi-Fi routing/Bluetooth radio pairing remains unverified: an emulator
-does not reproduce the customer's subnet/router or physical Bluetooth bond.
+The released EXE/APK passed public HTTPS relay pairing, named PC approval,
+authenticated dashboard and pairing persistence after app restart on an emulator
+and a real Galaxy Z Fold5. Android-provider public-relay tests also checked token
+revocation and wrong-pin rejection. No customer scripts were run.
+Physical Bluetooth, cellular-only operation and every customer's network remain
+separate tests; initial hosted capacity is bounded, not unlimited.
 Translation requires a separately configured provider.
 Hosting availability, license entitlement and payment readiness are separate checks.
 
