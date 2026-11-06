@@ -8,8 +8,8 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 3.0.0, refreshed companion integration build | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.0-companion-3.0.1/BlacHammerAIOLoader_v3.0.0.exe) |
-| Android 6.0+ | 3.0.1, version code 6 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.0-companion-3.0.1/BlacHammerAIOLoaderCompanion_v3.0.1.apk) |
+| Windows | 3.0.0, Community feed/restart fixes | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.0-companion-3.0.2/BlacHammerAIOLoader_v3.0.0.exe) |
+| Android 6.0+ | 3.0.2, version code 7 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.0-companion-3.0.2/BlacHammerAIOLoaderCompanion_v3.0.2.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
 
@@ -23,10 +23,18 @@ application source code**. Development repositories are private.
   ID and original release signing certificate are retained.
 - No building, Git, Gradle or development tools are needed to install these downloads.
 - GitHub's automatic "Source code" archives contain only this download repository's
-  documentation/legal notices, not the loader or companion implementation.
+  documentation/legal notices and the empty public script catalog, not the loader
+  or companion implementation.
 
 ## Features and access
 
+- Premium navy/cyan/gold Android interface with readable controls, dashboard tiles,
+  quick navigation, ripple/entry animations and a branded splash. Android animation
+  settings are respected; no decorative loading delay when animations are disabled.
+- Refreshed Windows EXE fixes the retired Community URL and isolates frozen restarts
+  so the old instance does not clean up the new instance's temporary files.
+- The public script catalog is intentionally empty while application source/examples
+  remain private. Licensed chat and customer-assigned downloads are separate.
 - Separate per-game asset libraries, optional Steam metadata/covers and map viewing.
 - Separate cloud-service and paired-PC connection indicators.
 - Android read-only paired-PC asset browsing and licensed shared Community chat.
