@@ -1,0 +1,21 @@
+BlacHammer AIO Loader 3.0.0 - Third-party notices
+===============================================
+
+BlacHammer's custom license covers only original BlacHammer code, artwork and documentation.
+It does not replace third-party licenses. Packaged dependency license texts are collected in
+third-party-licenses/ beside the executable and in the source downloads.
+
+Runtime/build components may include Python (PSF license), Tcl/Tk (their license terms),
+Pillow (HPND), tkinterdnd2/TkDND (their included licenses), pythonnet (MIT),
+pywebview and its dependencies (their included licenses), and PyInstaller's bootloader
+(GPL with the PyInstaller distribution exception). Consult the included license files
+for the exact terms applicable to the installed build, rather than this summary.
+
+The Once Human asset database contains game-related identifiers/descriptive records.
+Once Human and associated names are owned by their respective rights holders. This loader
+is an independent utility and is not endorsed by or affiliated with those rights holders.
+The database is not a grant of ownership over game assets, art or trademarks.
+
+Upgrade preview artwork is illustrative promotional artwork, not an actual product screenshot.
+Discord, GitHub, GitLab and other service names retain their owners' rights and service terms.
+Users are responsible for rights to scripts, DLLs, maps and other content they add.

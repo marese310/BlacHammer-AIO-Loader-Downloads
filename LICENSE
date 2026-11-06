@@ -1,0 +1,101 @@
+BlacHammer Source-Available Commercial License v3.0.0
+===================================================
+
+Copyright (c) 2026 BlacHammer. All rights reserved except as expressly granted below.
+
+This license applies to BlacHammer AIO Loader version 3.0.0, its original source code,
+documentation, artwork, logos and other original materials (the "Software"). Third-party
+components and data retain their own licenses and ownership; this license does not grant
+rights that BlacHammer does not own.
+
+1. Free download; licensed feature access
+----------------------------------------
+You may download an unmodified official copy of the Software free of charge, inspect its
+source, and run its expressly provided Free tier (Asset Finder and Map Viewer).
+Full paid customer features require a valid license key purchased directly from BlacHammer
+or a seller expressly authorized by BlacHammer, under the purchased plan's duration, device
+limits and feature permissions. Downloading source or an executable does not grant paid,
+developer or owner access. Developer/owner permissions are granted only by BlacHammer.
+You may not share, resell or transfer license keys without BlacHammer's prior written approval,
+or bypass license validation, expiry, device restrictions or feature-access controls.
+
+2. No unapproved forks, clones or derivative distributions
+---------------------------------------------------------
+No permission is granted to modify, fork, rebrand, merge, republish, sublicense, sell,
+redistribute or create derivative versions of the Software without BlacHammer's prior
+written approval. This includes using copied or adapted Software code or artwork to create
+a stripped-down clone, or removing features/branding and distributing the remaining work.
+Any permission must identify the approved use and scope; approval of one version or recipient
+does not automatically authorize other versions, uses or recipients.
+Users may configure the official loader through its supplied settings and run their own
+independent scripts; this alone does not constitute modifying the loader.
+Users may make private backup copies of their unmodified official download.
+No ownership is claimed over independently created programs that do not copy protected
+Software material. Nothing here limits rights that applicable law makes non-waivable.
+
+3. Mandatory logo and visible original-creator credit
+-----------------------------------------------------
+In the official Software and every expressly approved fork or derivative:
+
+  a. The BlacHammer logo must remain present, unaltered and clearly visible in the loader.
+     It must not be stripped, replaced, hidden, obscured or disabled.
+
+  b. BlacHammer must remain credited as the original creator of the loader. The official
+     Discord link, https://discord.gg/qeGAX6VCUz, must remain visible and usable.
+
+  c. An approved derivative may redesign its interface only within the written approval.
+     It must preserve visible original-creator credit and the Discord link in the loader,
+     or provide a clearly labeled Credits section readily accessible to every user upon
+     launching it. The BlacHammer logo must still remain visibly present in the application.
+     An obscure source comment or external website alone is not sufficient attribution.
+
+  d. Approved contributors may add truthful credits for their own changes, but may not
+     claim authorship of BlacHammer's original loader or remove its original-creator credit.
+
+  e. Approved distributions must include this license and identify BlacHammer as original
+     creator in their README and distribution/download page.
+
+Attribution is mandatory, not a substitute for written fork/redistribution approval.
+
+4. Requesting permission; no implied endorsement
+------------------------------------------------
+Contact BlacHammer through https://discord.gg/qeGAX6VCUz to request written approval.
+Approval and attribution do not imply endorsement, support or affiliation beyond what
+BlacHammer expressly states in writing. All rights not expressly granted are reserved.
+Making source visible is not an open-source license or permission to clone the Software.
+
+5. Termination
+---------------
+Permission under this license terminates upon violation of its terms. You must stop using
+and distributing the Software in violation and delete unauthorized copies, except copies
+required by applicable law. Termination does not remove any outstanding payment obligations
+or other remedies available under applicable law.
+
+6. Responsible use
+-------------------
+Only use the Software and loaded scripts/files with software, systems and data you are
+authorized to access. Scripts run with your operating-system permissions, not in a sandbox.
+You are responsible for third-party scripts, DLLs, accounts and services you use. No permission
+is granted to bypass anti-cheat protections, harm other users or violate another service's
+terms. Bundled third-party dependencies/data remain subject to their respective terms.
+
+7. No warranty; limitation of liability
+---------------------------------------
+TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, THE SOFTWARE IS PROVIDED "AS IS", WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR
+PURPOSE AND NONINFRINGEMENT. BLACHAMMER AND CONTRIBUTORS ARE NOT LIABLE FOR CLAIMS, DAMAGES
+OR OTHER LIABILITY ARISING FROM THE SOFTWARE, WHETHER IN CONTRACT, TORT OR OTHERWISE.
+THIS DOES NOT EXCLUDE LIABILITY OR CONSUMER RIGHTS THAT APPLICABLE LAW DOES NOT ALLOW TO
+BE EXCLUDED.
+
+8. Version scope and summary
+----------------------------
+These terms govern this version 3.0.0 release; they do not retroactively revoke permissions
+already granted for earlier copies under an earlier license.
+
+Free to download. Free-tier use is included. Paid customer access requires a purchased key.
+No unapproved forks or copied-code clones. Approved derivatives must preserve the BlacHammer
+logo, visible original-creator credit and the Discord link.
+
+This is a custom source-available commercial license, not an OSI-approved open-source license.
+Obtain qualified legal advice about enforceability and your intended commercial use.
