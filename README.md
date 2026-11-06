@@ -8,8 +8,8 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 3.0.0, Community feed/restart fixes | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.0-companion-3.0.2/BlacHammerAIOLoader_v3.0.0.exe) |
-| Android 6.0+ | 3.0.2, version code 7 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.0-companion-3.0.2/BlacHammerAIOLoaderCompanion_v3.0.2.apk) |
+| Windows | 3.0.1, secure pairing/live notices/signed updates | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.1-companion-3.0.3/BlacHammerAIOLoader_v3.0.1.exe) |
+| Android 6.0+ | 3.0.3, version code 8 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.1-companion-3.0.3/BlacHammerAIOLoaderCompanion_v3.0.3.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
 
@@ -49,6 +49,24 @@ application source code**. Development repositories are private.
 For pairing, use the PC's Remote tab on the same trusted Wi-Fi/LAN. Never expose the
 PC Remote API to the public internet. Cloud support works without PC pairing.
 Phone imports do not silently overwrite or merge into PC game libraries.
+
+Update both platforms together. Enable PC Remote, copy its HTTPS address and certificate
+fingerprint into phone Pairing, compare the fingerprint on the PC, then request approval.
+Re-pair older HTTP connections. Allow the EXE only on Windows Firewall Private/LocalSubnet
+(selected TCP port, discovery UDP 8766). If 8765 is occupied, choose an unused port.
+
+Open Support, enter a message, consent and submit New ticket; merely opening Support
+does not send anything. Notices/reply alerts poll while the apps are open, not as guaranteed
+background OS push. Android/Windows private inboxes remain separate.
+
+Automatic updates default on and can be disabled. Only newer official releases with a
+valid owner-signed manifest and matching checksum/size are accepted. Windows waits for
+five idle minutes, a further 60-second postponement window and no running tools/scripts,
+or normal exit; the replaced EXE is backed up. No background scheduler/elevated service is
+installed, so a closed app checks next time it opens. Android downloads verified APKs,
+but installation still requires Android permission and approval. Older builds need this
+initial upgrade manually. The detached update signatures do not replace Windows
+Authenticode signing; SmartScreen warnings may still appear.
 
 ## Support and purchase
 
