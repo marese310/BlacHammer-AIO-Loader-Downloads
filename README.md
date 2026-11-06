@@ -8,10 +8,20 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 3.0.4, Internet relay / private VPN / QR / secure Bluetooth | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.4-companion-3.0.7/BlacHammerAIOLoader_v3.0.4.exe) |
-| Android 6.0+ | 3.0.7, version code 12 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.4-companion-3.0.7/BlacHammerAIOLoaderCompanion_v3.0.7.apk) |
+| Windows | 3.0.5, fresh-install licensing fix / Internet relay | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.5-companion-3.0.7/BlacHammerAIOLoader_v3.0.5.exe) |
+| Android 6.0+ | 3.0.7, version code 12 (unchanged) | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.5-companion-3.0.7/BlacHammerAIOLoaderCompanion_v3.0.7.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
+
+**“Unknown license key” on a fresh Windows install:** use 3.0.5. Earlier releases
+selected the separate custom database rather than the official Keygen account.
+The fix uses Keygen on fresh installs and repairs unactivated official empty
+profiles; existing custom licenses/servers are preserved. No new key, copied
+settings or administrator token is needed. Developer/customer entitlements,
+expiry and HWID rules still come from the license issuer.
+The official unlimited Dev/Owner policy also receives issuer-side validation
+without a fingerprint scope after a mismatch. Only that verified developer
+policy can retry this way; customer machine restrictions remain unchanged.
 
 - **Windows:** put the EXE in its own folder and launch it. No build scripts or Python
   installation are needed to open the loader. Running your own Python scripts still
