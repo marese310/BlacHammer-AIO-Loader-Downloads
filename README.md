@@ -8,10 +8,31 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 4.1.0, linked Discord sign-in / general AIO platform | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-4.1.0-companion-3.1.0/BlacHammerAIOLoader_v4.1.0.exe) |
-| Android 6.0+ | 3.1.0, version code 13 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.1.0-companion-3.1.0/BlacHammerAIOLoaderCompanion_v3.1.0.apk) |
+| Windows | 4.2.0, portable workspace | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-4.2.0-companion-3.2.0/BlacHammerAIOLoader_v4.2.0.exe) |
+| Android 6.0+ | 3.2.0, version code 14 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-4.2.0-companion-3.2.0/BlacHammerAIOLoaderCompanion_v3.2.0.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
+
+### Desktop 4.2.0 / Companion 3.2.0: portable workspace
+
+- Tools/plugins follow identifiable same-folder renamed files. Ambiguous matches
+  require **Relink file**; another executable is never guessed.
+- Concurrent tools/scripts with captured output and exit diagnostics, independent
+  native GUI windows, stable selection/scrolling and file-row double-click launch.
+- Confirmed all-type drops register originals in place; CSV creates a separate
+  asset library. Nothing auto-executes or injects. Resources can use **Set launcher**.
+- Android Dashboard shows running programs; script logs can send bounded stdin
+  text to registered running scripts that read input.
+- **PC Remote > screen sharing**, then phone **Portable workspace**: explicitly
+  approved primary-screen preview and separate input permission. PC approval
+  covers **all paired phones** for ten minutes. Phone input also needs its
+  checkbox. Close private windows first; stop from either device.
+- At most 960x540 JPEG / one frame per second, **not gameplay streaming**.
+  No audio/gamepad forwarding or secure/elevated/protected-content bypass.
+  Monitoring covers loader-launched programs' output/exits, not all Windows errors.
+- Real physical-phone preview, input to a dedicated Windows test window, stop,
+  and pairing persistence passed through the public pinned encrypted relay.
+  Update both PC and phone; do not uninstall or clear existing data.
 
 ### Desktop 4.1.0: linked Discord sign-in and general AIO platform
 
@@ -43,8 +64,8 @@ application source code**. Development repositories are private.
 - Right-side and bottom scrollbars make controls reachable without enlarging
   the window. Use the wheel vertically, Shift+wheel horizontally, or Tab to
   bring focused controls into view.
-- Android remains on the existing 3.1.0 release; original maps/assets, private
-  imports, paid Asset Hub and phone-to-PC pairing remain supported.
+- Original maps/assets, private imports, paid Asset Hub and phone-to-PC pairing
+  remain supported in Companion 3.2.0.
 
 ### Maps and original assets restored
 

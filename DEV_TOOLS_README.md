@@ -4,6 +4,44 @@ Community: **Modz me up**. This loader is for multiple games, software and tools
 not a single game. This guide describes the desktop controls, linked Discord
 sign-in, license issuance and isolated hosting. Keep all real credentials private.
 
+## Portable tools and phone workspace (4.2.0 / Android 3.2.0)
+
+**Tools** registers native executables and command scripts. **Plugins** registers
+DLLs/configs/resources with an optional compatible launcher. **Set launcher**
+selects that program; arguments belong to the registration. Dropping a DLL never
+injects it. Existing Developer-only DLL Injector permissions are unchanged.
+**Relink file** repairs an ambiguous/missing registration explicitly. A remembered
+file can rename itself in the same folder and extension; file-ID matching allows
+self-modification, with exact size/hash fallback. Multiple matches fail closed.
+Legacy entries without an identity must be relinked once if their path is gone.
+
+Each registered tool/plugin can run alongside other utilities and scripts.
+**Output** displays its captured stdout/stderr; **Debug** highlights reported
+errors/nonzero exits. This monitors loader-launched processes, not every Windows
+application, hidden GUI errors or crash dumps. A configured launcher must accept
+the resource path; the loader cannot invent a DLL/config protocol. Native GUI
+programs retain their own windows; Scripts can **Release GUI to its own window**
+without stopping the registered process.
+
+Double-click a file row to run. Drops require confirmation and register originals
+in place: Python/protected scripts and folders to Scripts, executable/command
+files to Tools, CSV to a new asset library, everything else to Plugins/resources.
+No drop executes code, moves the original or bypasses delivery/edition checks.
+
+On a paired Android phone, Dashboard shows running programs; script logs send
+bounded stdin text only to registered running scripts that read standard input.
+For GUIs open **Portable workspace** after explicitly approving primary-screen
+viewing on the PC **Remote** page. Input requires separate PC permission and the
+phone checkbox. Approval is for **all paired phones**, session-only, ten minutes;
+close sensitive windows first. Stop from either device. Remote off, device
+revocation, code rotation, UI rebuild or restart clears approval. Phone pause
+clears the preview and phone input checkbox, but does not stop PC scripts.
+
+Screen preview is at most 960x540 JPEG, one frame per second, with fresh-frame
+input validation and bounded keys/text/taps/scroll. Existing pinned encrypted
+transports and authorization remain required. No gameplay/video-quality stream,
+audio, gamepad forwarding, UAC bypass or guaranteed protected-content capture.
+
 ## 1. Access levels: know which permission you need
 
 | Access | What it provides | What it does not provide |
