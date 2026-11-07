@@ -8,10 +8,30 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 3.0.5, fresh-install licensing fix / Internet relay | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.5-companion-3.0.7/BlacHammerAIOLoader_v3.0.5.exe) |
-| Android 6.0+ | 3.0.7, version code 12 (unchanged) | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.0.5-companion-3.0.7/BlacHammerAIOLoaderCompanion_v3.0.7.apk) |
+| Windows | 3.1.0, original assets / paid Asset Hub | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.1.0-companion-3.1.0/BlacHammerAIOLoader_v3.1.0.exe) |
+| Android 6.0+ | 3.1.0, version code 13 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.1.0-companion-3.1.0/BlacHammerAIOLoaderCompanion_v3.1.0.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
+
+### Maps and original assets restored
+
+- The original 137,818-row Once Human database is bundled on Android and remains
+  separately selectable offline. Existing imports, libraries and pairing are preserved.
+- Nine map providers/directories, including MapGenie, IGN, th.gl, Gamer Guides,
+  OnceHumanDB, iZurvive and HoYoLAB, with Android embedded HTTPS and browser fallback.
+  Third-party login, coverage and embedding restrictions still apply.
+- **Asset Finder > Shared Asset Hub** on PC/phone: active paid/developer license and
+  verified Discord enrollment required. Click Link Discord, then send the one-time
+  `!asset link CODE` in your own private Discord customer panel. Never post a key.
+- Separate official/customer CSV catalogs; imports create new user libraries.
+  Share only authorized CSVs up to 512 KiB, with explicit consent for automatic
+  private Discord staff export with creator username/rank and possible publication.
+  Existing local/private files are not silently uploaded.
+- Online raw GitHub/Discord CSV import, private Discord drafts and scoped,
+  paired phone-to-PC MCP asset transfer. No arbitrary paths or code execution.
+- Staff moderation/audit, approved-only customer exports and GM-only account
+  recovery. Hosted removal cannot erase downloaded copies or unrelated device files.
+  New sharing enrollment does not retroactively bind legacy sign-ins.
 
 **“Unknown license key” on a fresh Windows install:** use 3.0.5. Earlier releases
 selected the separate custom database rather than the official Keygen account.
