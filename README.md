@@ -4,6 +4,19 @@ Ready-to-run Windows loader and Android companion, created by **BlacHammer**.
 This public repository contains download information and legal notices, **not the
 application source code**. Development repositories are private.
 
+## New user? Start here
+
+Read the [easy step-by-step User Guide](USER_GUIDE.md). It covers downloads,
+Free versus paid activation, adding files, running tools, phone pairing,
+optional screen preview, Discord sign-in and common problems. No build tools
+or technical experience are required to follow the normal EXE/APK setup.
+
+The current stable release is **desktop 4.2.0 / Companion 3.2.0**.
+Local scripts are not automatically uploaded to GMs. Explicit script submission,
+private code review and approval before public release are queued for the
+**next feature update**, not available in this build. Current sharing moderation
+applies to explicitly submitted CSV asset data; review is not a safety guarantee.
+
 ## Download and install
 
 | Platform | Current version | Direct download |

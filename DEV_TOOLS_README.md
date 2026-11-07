@@ -4,6 +4,19 @@ Community: **Modz me up**. This loader is for multiple games, software and tools
 not a single game. This guide describes the desktop controls, linked Discord
 sign-in, license issuance and isolated hosting. Keep all real credentials private.
 
+**Current stable:** desktop 4.2.0 / Companion 3.2.0.
+New users should begin with the [User Guide](USER_GUIDE.md).
+Approved private source contributors should follow the separate Contributor
+Setup and Build Guide supplied with their private source handoff; an owner-issued
+license is still required for paid/Developer activation. Receiving source never
+grants official-server administration or production credentials.
+
+**Sharing boundary:** local scripts/tools are not silently copied to GMs.
+Current private moderation/export applies to explicitly shared CSV asset data.
+Explicit script submission, private GM code review and approval before public
+publication are queued for the next update, **not available in 4.2.0**.
+Neither current CSV approval nor future code review guarantees code safety.
+
 ## Portable tools and phone workspace (4.2.0 / Android 3.2.0)
 
 **Tools** registers native executables and command scripts. **Plugins** registers
