@@ -8,10 +8,28 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 3.1.0, original assets / paid Asset Hub | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.1.0-companion-3.1.0/BlacHammerAIOLoader_v3.1.0.exe) |
+| Windows | 4.0.0, Developer Suite / managed administration | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-4.0.0-companion-3.1.0/BlacHammerAIOLoader_v4.0.0.exe) |
 | Android 6.0+ | 3.1.0, version code 13 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.1.0-companion-3.1.0/BlacHammerAIOLoaderCompanion_v3.1.0.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
+
+### Desktop 4.0.0: Developer Suite and managed administration
+
+- Purchasable lifetime Developer Suite unlocks paid/local developer features,
+  unlimited licensed PCs and an exportable own-server backend/Discord-bot setup
+  kit. Hosting costs are separate; pricing and fulfillment remain manual.
+- A purchase never grants official server moderation. Host/Master is reserved
+  for the verified Discord server owner's linked Developer license. Alt Staff
+  requires a separate GM-approved grant; only the current owner can approve,
+  reset or revoke it. Never post license keys, staff keys or bot tokens.
+- Original/custom server profiles keep credentials separate. The footer shows
+  version, edition and selected server; update checks verify the official signed
+  manifest. Custom hosts cannot replace official binary-signing trust.
+- Right-side and bottom scrollbars make controls reachable without enlarging
+  the window. Use the wheel vertically, Shift+wheel horizontally, or Tab to
+  bring focused controls into view.
+- Android remains on the existing 3.1.0 release; original maps/assets, private
+  imports, paid Asset Hub and phone-to-PC pairing remain supported.
 
 ### Maps and original assets restored
 
