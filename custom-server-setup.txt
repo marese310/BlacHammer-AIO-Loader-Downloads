@@ -1,0 +1,100 @@
+BLACHAMMER AIO LOADER - DEVELOPER SUITE OWN-SERVER SETUP
+
+This kit contains no original-host keys, bot credentials, databases or signing secrets.
+Use only your own server/bot. Do not redistribute private config/data files.
+Hosting/domain/storage costs are separate from your Developer Suite purchase.
+
+1. Extract the kit into a private, persistent directory on your own server.
+   Install Python 3.14 and dependencies using:
+     python -m pip install -r requirements-server.txt
+   A virtual environment is recommended. Do not expose this directory as a static website.
+
+2. Create YOUR bot in the Discord Developer Portal. Enable Message Content and
+   Server Members intents. Invite it to YOUR guild with the bot OAuth scope.
+   Permissions: Manage Channels, Manage Roles, Moderate Members, View Channels,
+   Read Message History, Send Messages, Embed Links, Attach Files.
+   Put its bot role above the roles it will manage. Do not grant Administrator.
+   Never paste a bot token or API key in Discord.
+
+3. Run:
+     python setup_custom_server.py init
+   Enter your own HTTPS origin, guild ID and hidden bot token. The wizard creates
+   the public aio-announcements channel, AIO Support role and private support
+   category; it saves private configuration and seeds your first lifetime dev key.
+   If a Discord request fails, fix the permission/connection issue and run:
+     python setup_custom_server.py resume
+   Resources are matched by exact name; duplicates fail explicitly, not guessed.
+   Never run multiple setup processes. Do not overwrite an existing deployment.
+
+4. Read owner-credentials.private.json PRIVATELY to obtain your own initial
+   dev license and bootstrap Admin key. Keep server.private.json, owner credentials
+   and the data directory restricted to your operating-system user. Never upload
+   them to Git/Discord, attach them to support or include them in a public release.
+   On Windows, use a private user directory and review NTFS permissions.
+
+5. Run:
+     python setup_custom_server.py check
+     python setup_custom_server.py run
+   Configure your provider/reverse proxy for HTTPS to local port 8080 and mount
+   the data directory persistently. Only enable one trusted proxy hop if your
+   ingress overwrites forwarded headers and direct access is blocked.
+   The bot and HTTP worker share one SQLite database; use only one deployment.
+   Verify https://YOUR-HOST/healthz returns ok true.
+   Default relay transport is disabled; LAN/private pairing remains available.
+
+6. In loader 4.0: choose your own server at sign-in and enter YOUR seeded dev key.
+   In Dev Tools > Server access, verify your private bootstrap key if needed.
+   Link Discord in your private customer panel with !asset link CODE, then request
+   Host. In your new private gm-approvals channel, your actual guild owner approves
+   the displayed !admin command. Verify online in loader. The old bootstrap key
+   is permanently disabled after first Host adoption.
+
+7. Issue customer keys from Licenses while using YOUR custom backend/profile.
+   Send customers your HTTPS origin and their own key through a secure channel.
+   Customers select that server on the loader sign-in screen. Your keys/settings
+   cannot modify or authenticate to the original host. Never reuse original-host
+   license keys, issuer API tokens, Admin keys or bot tokens.
+   Alt Staff issue/reset/revoke needs your guild owner's explicit approval; a
+   purchased Developer Suite badge is not a Discord moderation role.
+
+DISCORD SIGN-IN
+After linking, open Shared Asset Hub and choose Enable Discord sign-in. This
+explicitly stores an encrypted license credential on YOUR selected host.
+At sign-in choose Sign in with Discord, copy !login CODE into YOUR private
+customer panel, then Check approval in the loader. Never approve another
+person's code. Codes expire in five minutes and are single-use.
+Users with multiple enabled licenses select the hashed member ID shown by
+the bot: !login CODE MEMBER_ID. License expiry, suspension and HWID locks
+still apply; recovery/HWID reset requires the original license key.
+Disable Discord sign-in in Shared Asset Hub to revoke this login method.
+See DEV_TOOLS_README.md for the full operator and function reference.
+
+CANONICAL SETTINGS
+New deployments use BLACHAMMER_AIO_ADMIN_KEY, BLACHAMMER_AIO_DATA_DIR,
+BLACHAMMER_AIO_DB_PATH, BLACHAMMER_AIO_COMMUNITY_BACKEND,
+BLACHAMMER_AIO_RELAY_ENABLED and BLACHAMMER_AIO_RELAY_PROXY_HOPS.
+Older environment names remain compatibility aliases; conflicting values fail.
+Existing database paths stay in place to avoid switching to an empty database.
+
+UPDATES AND CUSTOMER FILES
+Use Announcements/Updates for your own service notices. Use the existing Downloads
+and Updates delivery tools for authorized scripts/assets and versioned content.
+Publish only files you own/have permission to distribute; no arbitrary automatic
+execution. Customers receive your server's notices while that profile is selected.
+Official EXE/APK replacements always require the original signed official release.
+You cannot use this kit to sign or silently replace the official loader binary.
+The loader's Check version button verifies the signed official release feed.
+Publish your own service changes separately from official binary releases.
+
+BACKUP/RECOVERY
+Before updates, stop making admin changes and create a consistent private backup:
+  python setup_custom_server.py backup --destination PRIVATE-NEW-BACKUP.db
+The command uses SQLite backup and verifies integrity. It refuses to overwrite an
+existing destination. Back up configuration/secrets separately and privately.
+Back up data/discord-login.private.key privately alongside the database. It
+encrypts enabled Discord-login credentials; a database-only backup cannot
+recover those credentials. Never include it in a kit, repository or attachment.
+Restore only while both HTTP/bot workers are stopped. Keep a last-known-good kit.
+No cloud provisioner, automatic billing/payouts or payment fulfillment is included.
+Payment links require your configuration; independently verify purchases before
+issuing customer keys. No default retail price or payment provider is implied.

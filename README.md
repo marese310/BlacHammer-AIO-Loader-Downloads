@@ -8,12 +8,27 @@ application source code**. Development repositories are private.
 
 | Platform | Current version | Direct download |
 |---|---|---|
-| Windows | 4.0.0, Developer Suite / managed administration | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-4.0.0-companion-3.1.0/BlacHammerAIOLoader_v4.0.0.exe) |
+| Windows | 4.1.0, linked Discord sign-in / general AIO platform | [Download EXE](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-4.1.0-companion-3.1.0/BlacHammerAIOLoader_v4.1.0.exe) |
 | Android 6.0+ | 3.1.0, version code 13 | [Download APK](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/download/desktop-3.1.0-companion-3.1.0/BlacHammerAIOLoaderCompanion_v3.1.0.apk) |
 
 [All downloads, checksums and release notes](https://github.com/marese310/BlacHammer-AIO-Loader-Downloads/releases/latest)
 
-### Desktop 4.0.0: Developer Suite and managed administration
+### Desktop 4.1.0: linked Discord sign-in and general AIO platform
+
+- **BlacHammer AIO Loader**, community **Modz me up**, supports multiple games,
+  software and tools. New backend settings and fresh-install filenames use
+  BlacHammer branding. Existing databases, keys, private files, URLs, pairing
+  and protected-file identities are preserved for compatibility.
+- Sign in with a key once, link Discord, then choose **Shared Asset Hub >
+  Enable Discord sign-in**. Future sign-in: choose **Sign in with Discord**,
+  copy `!login CODE` to your own private customer panel, then **Check approval**.
+  Never approve somebody else's code or paste a license key in Discord.
+- Discord approval still checks the active license and PC HWID. Keep the
+  original license key privately for lockout recovery and authorized HWID resets.
+  Existing linked users must explicitly enable this feature once.
+- [Complete Developer and Host Manual](DEV_TOOLS_README.md): key linking and
+  issuance, every Developer page, Host/Alt Staff, own-server setup, backups and
+  recovery. Also bundled inside **Dev Tools > Developer manual**.
 
 - Purchasable lifetime Developer Suite unlocks paid/local developer features,
   unlimited licensed PCs and an exportable own-server backend/Discord-bot setup
